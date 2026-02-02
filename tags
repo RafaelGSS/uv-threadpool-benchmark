@@ -1,0 +1,192 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+16	lib/utils.js	/^export const THREADPOOL_SIZES = [4, 8, 16, 32, 64, 128];$/;"	E
+8	lib/utils.js	/^export const THREADPOOL_SIZES = [4, 8, 16, 32, 64, 128];$/;"	E
+BENCHMARKS	run-all-benchmarks.js	/^const BENCHMARKS = {$/;"	O
+CONCURRENCY_LEVELS	benchmarks/crypto-operations.js	/^const CONCURRENCY_LEVELS = [4, 8, 16, 32, 64];$/;"	A
+CONCURRENCY_LEVELS	benchmarks/dns-operations.js	/^const CONCURRENCY_LEVELS = [4, 8, 16, 32, 64, 128];$/;"	A
+CONCURRENCY_LEVELS	benchmarks/fs-operations.js	/^const CONCURRENCY_LEVELS = [10, 50, 100, 200];$/;"	A
+CONCURRENCY_LEVELS	benchmarks/zlib-operations.js	/^const CONCURRENCY_LEVELS = [4, 8, 16, 32, 64];$/;"	A
+DATA_SIZES	benchmarks/zlib-operations.js	/^const DATA_SIZES = {$/;"	O
+DEFAULT_SIZES	run-all-benchmarks.js	/^const DEFAULT_SIZES = [4, 'auto'];$/;"	A
+DOMAINS	benchmarks/dns-operations.js	/^const DOMAINS = [$/;"	A
+FILE_SIZE	benchmarks/fs-operations.js	/^const FILE_SIZE = 1024 * 1024; \/\/ 1MB$/;"	V
+NUM_FILES	benchmarks/fs-operations.js	/^const NUM_FILES = 100;$/;"	V
+THREADPOOL_SIZES	benchmarks/memory-usage.js	/^const THREADPOOL_SIZES = [4, 8, 16, 32, 64, 128, 256, 512];$/;"	A
+THREADPOOL_SIZES	lib/utils.js	/^export const THREADPOOL_SIZES = [4, 8, 16, 32, 64, 128];$/;"	E
+after	lib/utils.js	/^      after: memAfter,$/;"	P
+allImprovements	compare-results.js	/^    const allImprovements = [$/;"	A
+allResults	compare-results.js	/^  let allResults;$/;"	V
+allResults	run-all-benchmarks.js	/^  const allResults = {$/;"	O
+autoThreadpoolSize	benchmarks/memory-usage.js	/^    autoThreadpoolSize: autoSize,$/;"	P
+avgAfter	benchmarks/memory-usage.js	/^        const avgAfter = measurements.reduce((a, m) => a + m.after, 0) \/ measurements.length;$/;"	F
+avgDuring	benchmarks/memory-usage.js	/^        const avgDuring = measurements.reduce((a, m) => a + m.during, 0) \/ measurements.length;$/;"	F
+avgImprovement	compare-results.js	/^      const avgImprovement = allImprovements.reduce((a, b) => a + b, 0) \/ allImprovements.length;$/;"	F
+baseline	benchmarks/memory-usage.js	/^    baseline: baselineResults,$/;"	P
+baseline4	benchmarks/memory-usage.js	/^    const baseline4 = baselineResults.find(r => r.threadpoolSize === 4);$/;"	F
+baselineResult	compare-results.js	/^        const baselineResult = baselineData.results.find(r => r.name === result.name);$/;"	F
+baselineResults	benchmarks/memory-usage.js	/^  const baselineResults = [];$/;"	A
+baselineTest	compare-results.js	/^    const baselineTest = baselineData.results.find(r => r.name === testName);$/;"	F
+before	lib/utils.js	/^      before: memBefore,$/;"	P
+benchApiGateway	benchmarks/mixed-workload.js	/^async function benchApiGateway(requestCount) {$/;"	F
+benchAuthService	benchmarks/mixed-workload.js	/^async function benchAuthService(requestCount) {$/;"	F
+benchBalanced	benchmarks/mixed-workload.js	/^async function benchBalanced(operationCount) {$/;"	F
+benchBrotliCompress	benchmarks/zlib-operations.js	/^async function benchBrotliCompress(concurrency, dataSize) {$/;"	F
+benchBrotliDecompress	benchmarks/zlib-operations.js	/^async function benchBrotliDecompress(concurrency, dataSize) {$/;"	F
+benchBurstLookups	benchmarks/dns-operations.js	/^async function benchBurstLookups() {$/;"	F
+benchConcurrentLookups	benchmarks/dns-operations.js	/^async function benchConcurrentLookups(concurrency) {$/;"	F
+benchConcurrentReads	benchmarks/fs-operations.js	/^async function benchConcurrentReads(concurrency) {$/;"	F
+benchConcurrentStats	benchmarks/fs-operations.js	/^async function benchConcurrentStats(concurrency) {$/;"	F
+benchConcurrentWrites	benchmarks/fs-operations.js	/^async function benchConcurrentWrites(concurrency) {$/;"	F
+benchDeflate	benchmarks/zlib-operations.js	/^async function benchDeflate(concurrency, dataSize) {$/;"	F
+benchFileProcessor	benchmarks/mixed-workload.js	/^async function benchFileProcessor(fileCount) {$/;"	F
+benchGzipCompress	benchmarks/zlib-operations.js	/^async function benchGzipCompress(concurrency, dataSize, compressibility) {$/;"	F
+benchGzipDecompress	benchmarks/zlib-operations.js	/^async function benchGzipDecompress(concurrency, dataSize) {$/;"	F
+benchHeavyCrypto	benchmarks/mixed-workload.js	/^async function benchHeavyCrypto(operationCount) {$/;"	F
+benchHeavyIO	benchmarks/mixed-workload.js	/^async function benchHeavyIO(operationCount) {$/;"	F
+benchHighContentionPbkdf2	benchmarks/crypto-operations.js	/^async function benchHighContentionPbkdf2() {$/;"	F
+benchHighThroughput	benchmarks/zlib-operations.js	/^async function benchHighThroughput() {$/;"	F
+benchHttpClientPattern	benchmarks/dns-operations.js	/^async function benchHttpClientPattern() {$/;"	F
+benchLocalhostLookups	benchmarks/dns-operations.js	/^async function benchLocalhostLookups(concurrency) {$/;"	F
+benchMixedCompression	benchmarks/zlib-operations.js	/^async function benchMixedCompression(concurrency) {$/;"	F
+benchMixedCrypto	benchmarks/crypto-operations.js	/^async function benchMixedCrypto(concurrency) {$/;"	F
+benchMixedFamilyLookups	benchmarks/dns-operations.js	/^async function benchMixedFamilyLookups(concurrency) {$/;"	F
+benchMixedOperations	benchmarks/fs-operations.js	/^async function benchMixedOperations(concurrency) {$/;"	F
+benchPbkdf2	benchmarks/crypto-operations.js	/^async function benchPbkdf2(concurrency) {$/;"	F
+benchRandomFill	benchmarks/crypto-operations.js	/^async function benchRandomFill(concurrency) {$/;"	F
+benchRoundTrip	benchmarks/zlib-operations.js	/^async function benchRoundTrip(concurrency) {$/;"	F
+benchScrypt	benchmarks/crypto-operations.js	/^async function benchScrypt(concurrency) {$/;"	F
+benchSequentialVsParallel	benchmarks/dns-operations.js	/^async function benchSequentialVsParallel() {$/;"	F
+benchSequentialVsParallel	benchmarks/fs-operations.js	/^async function benchSequentialVsParallel() {$/;"	F
+benchStaggeredLoad	benchmarks/mixed-workload.js	/^async function benchStaggeredLoad(operationCount) {$/;"	F
+benchThroughput	benchmarks/crypto-operations.js	/^async function benchThroughput() {$/;"	F
+benchWebServer	benchmarks/mixed-workload.js	/^async function benchWebServer(requestCount) {$/;"	F
+benchmark	compare-results.js	/^          benchmark: benchName,$/;"	P
+benchmarks	run-all-benchmarks.js	/^    benchmarks: {},$/;"	P
+bufferSize	benchmarks/crypto-operations.js	/^  const bufferSize = 1024 * 64; \/\/ 64KB$/;"	V
+burstSize	benchmarks/dns-operations.js	/^  const burstSize = 50;$/;"	V
+calculateImprovement	compare-results.js	/^function calculateImprovement(baseline, current) {$/;"	F
+calculateStats	lib/utils.js	/^export function calculateStats(times) {$/;"	E
+chunks	benchmarks/zlib-operations.js	/^    const chunks = [];$/;"	A
+cleanup	benchmarks/fs-operations.js	/^async function cleanup() {$/;"	F
+cleanup	benchmarks/mixed-workload.js	/^async function cleanup() {$/;"	F
+concurrency	benchmarks/crypto-operations.js	/^  const concurrency = 32;$/;"	V
+concurrentOps	benchmarks/memory-usage.js	/^  const concurrentOps = 64;$/;"	V
+cwd	run-all-benchmarks.js	/^      cwd: __dirname,$/;"	P
+diff	lib/utils.js	/^      diff: {$/;"	P
+entry	compare-results.js	/^        const entry = {$/;"	O
+env	benchmarks/memory-usage.js	/^    const env = { ...process.env };$/;"	O
+env	run-all-benchmarks.js	/^    const env = { ...process.env };$/;"	O
+files	benchmarks/fs-operations.js	/^  const files = Array.from({ length: concurrency }, (_, i) =>$/;"	F
+formatBytes	lib/utils.js	/^export function formatBytes(bytes) {$/;"	E
+formatDuration	lib/utils.js	/^export function formatDuration(ms) {$/;"	E
+formatImprovement	compare-results.js	/^function formatImprovement(improvement) {$/;"	F
+generateTestData	benchmarks/zlib-operations.js	/^function generateTestData(size, compressibility = 'medium') {$/;"	F
+getAutoSize	lib/utils.js	/^export function getAutoSize() {$/;"	E
+getMemoryUsage	lib/utils.js	/^export function getMemoryUsage() {$/;"	E
+getSystemInfo	lib/utils.js	/^export function getSystemInfo() {$/;"	E
+header	compare-results.js	/^  const header = ['Test Name', ...sizes.filter(s => s !== baselineSize).map(s => `Size ${s}`)];$/;"	A
+header	compare-results.js	/^  const header = ['Test Name', ...sizes.filter(s => s !== baselineSize).map(s => `Size ${s}`)];$/;"	F
+i	lib/utils.js	/^  let i = 0;$/;"	V
+improvements	compare-results.js	/^          improvements: [],$/;"	P
+increase	benchmarks/memory-usage.js	/^    const increase = baselineResults.find(r => r.threadpoolSize === autoSize);$/;"	F
+init	benchmarks/memory-usage.js	/^      async function init() {$/;"	F
+iterations	benchmarks/crypto-operations.js	/^  const iterations = 10000;$/;"	V
+iterations	benchmarks/crypto-operations.js	/^  const iterations = 50000; \/\/ Very expensive$/;"	V
+keylen	benchmarks/crypto-operations.js	/^  const keylen = 64;$/;"	V
+loadResults	benchmarks/memory-usage.js	/^  const loadResults = [];$/;"	A
+main	benchmarks/crypto-operations.js	/^async function main() {$/;"	F
+main	benchmarks/dns-operations.js	/^async function main() {$/;"	F
+main	benchmarks/fs-operations.js	/^async function main() {$/;"	F
+main	benchmarks/memory-usage.js	/^async function main() {$/;"	F
+main	benchmarks/mixed-workload.js	/^async function main() {$/;"	F
+main	benchmarks/zlib-operations.js	/^async function main() {$/;"	F
+main	compare-results.js	/^async function main() {$/;"	F
+main	run-all-benchmarks.js	/^async function main() {$/;"	F
+measureMemory	benchmarks/memory-usage.js	/^function measureMemory(threadpoolSize) {$/;"	F
+measureMemoryUnderLoad	benchmarks/memory-usage.js	/^function measureMemoryUnderLoad(threadpoolSize, concurrentOps) {$/;"	F
+measurements	benchmarks/memory-usage.js	/^        const measurements = [];$/;"	A
+memory	lib/utils.js	/^    memory: {$/;"	P
+neutral	compare-results.js	/^          neutral: [],$/;"	P
+numLookups	benchmarks/dns-operations.js	/^  const numLookups = 20;$/;"	V
+numOps	benchmarks/fs-operations.js	/^  const numOps = 50;$/;"	V
+numOps	benchmarks/zlib-operations.js	/^  const numOps = 200;$/;"	V
+numRequests	benchmarks/dns-operations.js	/^  const numRequests = 30;$/;"	V
+operations	benchmarks/mixed-workload.js	/^      const operations = [];$/;"	A
+output	benchmarks/crypto-operations.js	/^  const output = {$/;"	O
+output	benchmarks/dns-operations.js	/^  const output = {$/;"	O
+output	benchmarks/fs-operations.js	/^    const output = {$/;"	O
+output	benchmarks/memory-usage.js	/^  const output = {$/;"	O
+output	benchmarks/mixed-workload.js	/^    const output = {$/;"	O
+output	benchmarks/zlib-operations.js	/^  const output = {$/;"	O
+params	benchmarks/zlib-operations.js	/^            params: { [zlib.constants.BROTLI_PARAM_QUALITY]: 4 },$/;"	P
+params	benchmarks/zlib-operations.js	/^          params: {$/;"	P
+params	benchmarks/zlib-operations.js	/^    params: { [zlib.constants.BROTLI_PARAM_QUALITY]: 4 },$/;"	P
+parseArgs	compare-results.js	/^function parseArgs() {$/;"	F
+parseArgs	run-all-benchmarks.js	/^function parseArgs() {$/;"	F
+password	benchmarks/crypto-operations.js	/^  const password = 'test';$/;"	V
+password	benchmarks/crypto-operations.js	/^  const password = 'test-password-123';$/;"	V
+password	benchmarks/mixed-workload.js	/^  const password = 'secure-password';$/;"	V
+password	benchmarks/mixed-workload.js	/^  const password = 'test';$/;"	V
+password	benchmarks/mixed-workload.js	/^  const password = 'user-password-123';$/;"	V
+pattern	benchmarks/zlib-operations.js	/^    const pattern = 'The quick brown fox jumps over the lazy dog. ';$/;"	V
+printComparison	lib/utils.js	/^export function printComparison(baseline, current) {$/;"	E
+printComparisonTable	compare-results.js	/^function printComparisonTable(benchmarkName, baselineSize, results) {$/;"	F
+printRecommendations	compare-results.js	/^function printRecommendations(allResults, baselineSize) {$/;"	F
+printResults	lib/utils.js	/^export function printResults(result) {$/;"	E
+printSummaryTable	compare-results.js	/^function printSummaryTable(allResults, baselineSize) {$/;"	F
+printSystemInfo	lib/utils.js	/^export function printSystemInfo() {$/;"	E
+promises	benchmarks/crypto-operations.js	/^      const promises = [];$/;"	A
+promises	benchmarks/dns-operations.js	/^      const promises = [];$/;"	A
+promises	benchmarks/fs-operations.js	/^      const promises = [];$/;"	A
+promises	benchmarks/memory-usage.js	/^          const promises = [];$/;"	A
+promises	benchmarks/memory-usage.js	/^        const promises = [];$/;"	A
+promises	benchmarks/zlib-operations.js	/^      const promises = [];$/;"	A
+regressions	compare-results.js	/^          regressions: [],$/;"	P
+requests	benchmarks/mixed-workload.js	/^      const requests = [];$/;"	A
+reset	compare-results.js	/^  const reset = '\\x1b[0m';$/;"	V
+result	compare-results.js	/^  const result = {$/;"	O
+result	run-all-benchmarks.js	/^  const result = {$/;"	O
+results	benchmarks/crypto-operations.js	/^  const results = [];$/;"	A
+results	benchmarks/dns-operations.js	/^  const results = [];$/;"	A
+results	benchmarks/fs-operations.js	/^    const results = [];$/;"	A
+results	benchmarks/mixed-workload.js	/^    const results = [];$/;"	A
+results	benchmarks/zlib-operations.js	/^  const results = [];$/;"	A
+row	compare-results.js	/^    const row = [testName.slice(0, 48).padEnd(50)];$/;"	A
+rssAfter	benchmarks/memory-usage.js	/^          rssAfter: avgAfter,$/;"	P
+rssDuring	benchmarks/memory-usage.js	/^          rssDuring: avgDuring,$/;"	P
+run	benchmarks/memory-usage.js	/^      async function run() {$/;"	F
+runBenchmark	run-all-benchmarks.js	/^function runBenchmark(benchmarkPath, threadpoolSize) {$/;"	F
+setup	benchmarks/fs-operations.js	/^async function setup() {$/;"	F
+setup	benchmarks/mixed-workload.js	/^async function setup() {$/;"	F
+sizeTest	compare-results.js	/^      const sizeTest = sizeData.results.find(r => r.name === testName);$/;"	F
+sizes	compare-results.js	/^  const sizes = Object.keys(results).filter(s => results[s] && !results[s].error);$/;"	F
+sizes	run-all-benchmarks.js	/^    sizes: DEFAULT_SIZES,$/;"	P
+sizesToTest	benchmarks/memory-usage.js	/^  const sizesToTest = ['auto', ...THREADPOOL_SIZES.filter(s => s <= autoSize * 2)];$/;"	A
+sizesToTest	benchmarks/memory-usage.js	/^  const sizesToTest = ['auto', ...THREADPOOL_SIZES.filter(s => s <= autoSize * 2)];$/;"	F
+sorted	compare-results.js	/^      const sorted = summary.improvements.sort((a, b) => b.improvement - a.improvement);$/;"	F
+sorted	compare-results.js	/^      const sorted = summary.regressions.sort((a, b) => a.improvement - b.improvement);$/;"	F
+sorted	lib/utils.js	/^  const sorted = [...times].sort((a, b) => a - b);$/;"	A
+sorted	lib/utils.js	/^  const sorted = [...times].sort((a, b) => a - b);$/;"	F
+stderr	benchmarks/memory-usage.js	/^    let stderr = '';$/;"	V
+stderr	run-all-benchmarks.js	/^    let stderr = '';$/;"	V
+stdio	benchmarks/memory-usage.js	/^      stdio: ['pipe', 'pipe', 'pipe'],$/;"	P
+stdio	run-all-benchmarks.js	/^      stdio: ['inherit', 'pipe', 'pipe'],$/;"	P
+stdout	benchmarks/memory-usage.js	/^    let stdout = '';$/;"	V
+stdout	run-all-benchmarks.js	/^    let stdout = '';$/;"	V
+sum	lib/utils.js	/^  const sum = sorted.reduce((a, b) => a + b, 0);$/;"	F
+summaries	compare-results.js	/^  const summaries = {};$/;"	O
+system	run-all-benchmarks.js	/^    system: {$/;"	P
+testNames	compare-results.js	/^  const testNames = baselineData.results.map(r => r.name);$/;"	F
+threadpoolSize	benchmarks/memory-usage.js	/^        threadpoolSize: size,$/;"	P
+times	lib/utils.js	/^  const times = [];$/;"	A
+token	benchmarks/mixed-workload.js	/^  const token = 'api-token-12345';$/;"	V
+totalOps	benchmarks/crypto-operations.js	/^  const totalOps = 100;$/;"	V
+underLoad	benchmarks/memory-usage.js	/^    underLoad: loadResults,$/;"	P
+units	lib/utils.js	/^  const units = ['B', 'KB', 'MB', 'GB'];$/;"	A
+variance	lib/utils.js	/^  const variance = sorted.reduce((acc, t) => acc + Math.pow(t - mean, 2), 0) \/ sorted.length;$/;"	F
+writePromises	benchmarks/fs-operations.js	/^  const writePromises = [];$/;"	A
