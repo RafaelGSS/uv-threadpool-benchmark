@@ -1,17 +1,10 @@
 {
   "name": "uv-threadpool-benchmark",
-  "version": "1.0.0",
-  "description": "Benchmark project for testing UV_THREADPOOL_SIZE auto-sizing (nodejs/node#61533)",
+  "version": "2.0.0",
+  "description": "HTTP server for benchmarking UV_THREADPOOL_SIZE with wrk2",
   "type": "module",
   "scripts": {
-    "bench:fs": "node benchmarks/fs-operations.js",
-    "bench:crypto": "node benchmarks/crypto-operations.js",
-    "bench:dns": "node benchmarks/dns-operations.js",
-    "bench:zlib": "node benchmarks/zlib-operations.js",
-    "bench:mixed": "node benchmarks/mixed-workload.js",
-    "bench:all": "node run-all-benchmarks.js",
-    "compare": "node compare-results.js",
-    "memory": "node benchmarks/memory-usage.js"
+    "start": "node server.js"
   },
   "keywords": ["benchmark", "threadpool", "libuv", "performance"],
   "license": "MIT"
