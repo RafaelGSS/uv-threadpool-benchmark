@@ -4,8 +4,12 @@
   "description": "HTTP server for benchmarking UV_THREADPOOL_SIZE with wrk2",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "load-test": "node load-test.js"
   },
   "keywords": ["benchmark", "threadpool", "libuv", "performance"],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "autocannon": "^7.15.0"
+  }
 }

@@ -1,17 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * HTTP Server for UV_THREADPOOL_SIZE benchmarking
- *
- * Run with wrk2 to compare performance across different threadpool sizes.
- *
- * Endpoints:
- * - /crypto - PBKDF2 hashing (uses threadpool)
- * - /fs     - File read (uses threadpool)
- * - /mixed  - Both crypto + fs
- * - /metrics - Memory/CPU stats (check after benchmark)
- */
-
 import http from 'node:http';
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
