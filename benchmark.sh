@@ -27,8 +27,21 @@ cd "$DIR"
 echo "Installing dependencies..."
 npm install
 
-echo "Starting server..."
-npm start > server.log 2>&1 &
+echo "Starting server with custom binary..."
+
+# Reassemble binary if parts exist
+if [ ! -f "./node-61533" ] && compgen -G "node-bin-part-*" > /dev/null; then
+    echo "Reassembling custom binary from parts..."
+    cat node-bin-part-* > node-61533
+fi
+
+if [ -f "./node-61533" ]; then
+    chmod +x ./node-61533
+    ./node-61533 server.js > server.log 2>&1 &
+else
+    echo "Custom binary ./node-61533 not found, falling back to system node"
+    npm start > server.log 2>&1 &
+fi
 SERVER_PID=$!
 sleep 5
 
